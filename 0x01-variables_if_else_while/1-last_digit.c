@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - The program outputs the final digit of a randomly generated number and determines if it's greater than 5,less than6,or equal to 0
+ * main -  program checks if last digit of a random number is > 5, < 6, or = 0
  *  Return: Always 0.
  */
 int main(void)
