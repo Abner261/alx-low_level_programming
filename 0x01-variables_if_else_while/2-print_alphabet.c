@@ -1,15 +1,18 @@
 #include <stdio.h>
 /**
- * main - This marks the program's starting point
- * This program outputs the lowercase alphabet ('a' to 'z') with a newline
- * return: 0 (success)
+ * main - Entry point of the program
+ *
+ * Description: This program prints the lowercase alphabet from 'a' to 'z'
+ * followed by a newline character.
+ *
+ * Return: 0 (Success)
  */
 int main(void)
 {
-char a;
-for (a = 'a'; a <= 'z'; a++)
+	char a;
 
-putchar(a);
-putchar('\n')
-Return(0);
+	for (a = 'a'; a <= 'z'; a++)
+		putchar(a);
+	putchar('\n');
+	return (0);
 }
