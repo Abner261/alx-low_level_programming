@@ -1,1 +1,1 @@
-c functions,nested loops project
+0x02-functions_nested_loops
