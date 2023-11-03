@@ -5,8 +5,10 @@
 /**
  * **alloc_grid - A function that returns a pointer
  * to a 2 dimensional array of integers
- * @width: type integer width.
- * @height: type integer height.
+ * @width: type integer width this parameter represents
+ * the number of columns in the 2D array
+ * @height: type integer height this parameter represents
+ * the number of rows in the 2D array
  * Return: Null if 0 or negative.
  */
 int **alloc_grid(int width, int height)
