@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - A progrsm that multiplies two numbers
+ * main - A program that multiplies two numbers
  * @argc: An integer representing the number of command-line arguments
  * passed to the program
  * @argv: An array of strings representing command-line arguments
