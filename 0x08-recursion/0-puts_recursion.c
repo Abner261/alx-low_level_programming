@@ -3,6 +3,7 @@
 /**
  * _puts_recursion -A function that Prints a string followed by a new line.
  * @s: A pointer to a string to be printed
+ * (and the string is at the 0-main.c file)
  * Return: 0
  */
 
