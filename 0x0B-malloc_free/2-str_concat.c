@@ -16,20 +16,35 @@ char *str_concat(char *s1, char *s2)
 	unsigned int len2 = (s2 == NULL) ? 0 : 0;
 	char *result, *p;
 
-	while (s1 && s1[len1])
-		len1++;
-	while (s2 && s2[len2])
-		len2++;
+	if (s1 != NULL)
+	{
+		while (s1 && s1[len1])
+			len1++;
+	}
+
+	if (s2 != NULL)
+	{
+		while (s2 && s2[len2])
+			len2++;
+	}
 
 	result = malloc((len1 + len2 + 1) * sizeof(char));
 	if (result == NULL)
 		return (NULL);
 
 	p = result;
-	while (*s1)
-		*p++ = *s1++;
-	while (*s2)
-		*p++ = *s2++;
+
+	if (s1 != NULL)
+	{
+		while (*s1)
+			*p++ = *s1++;
+	}
+
+	if (s2 != NULL)
+	{
+		while (*s2)
+			*p++ = *s2++;
+	}
 
 	*p = '\0';
 	return (result);
