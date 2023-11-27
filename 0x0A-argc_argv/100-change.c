@@ -5,48 +5,38 @@
  * main - A function calculates the minimum number of coins needed
  * to make change for an amount of money specified as a command-line argument
  * @argc: An integer representing the number of command-line arguments
- * @argv: An array of strings representing command-line arguments
- * Return: 1 if there is an error, 0 if the program executes successfully
+ * @argv:  An array of strings representing command-line arguments
+ * Return: 1 if error, 0 otherwise.
  */
 
 int main(int argc, char *argv[])
 {
-	int change, input;
-	unsigned int x;
+	int change = 0, input;
+	unsigned int a;
 	char *p;
 	int coins[] = {25, 10, 5, 2};
 
-	if (argc != 2)
+	if (argc != 2 || (input = strtol(argv[1], &p, 10), *p != '\0'))
 	{
 		printf("Error\n");
-		return (1);
+		return 1;
 	}
 
-	input = strtol(argv[1], &p, 10);
-	change = 0;
-
-	if (!*p)
+	while (input > 1)
 	{
-		while (input > 1)
+		for (a = 0; a < sizeof(coins) / sizeof(coins[0]); a++)
 		{
-			for (x = 0; x < sizeof(coins[x]); x++)
+			if (input >= coins[a])
 			{
-				if (input >= coins[x])
-				{
-					change += input / coins[x];
-					input %= coins[x];
-				}
+				change += input / coins[a];
+				input %= coins[a];
 			}
 		}
-		if (input == 1)
-			change++;
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
-
+	
+	change += (input == 1);
 	printf("%d\n", change);
-	return (0);
+
+	return 0;
 }
+
