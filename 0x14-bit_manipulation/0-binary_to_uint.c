@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * binary_to_unit - A function that converts a
@@ -11,21 +10,20 @@
  * are invalid characters or b is NULL
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int result = 0;
+	int a;
+	unsigned int dec_val = 0;
 
-	if (b == NULL)
+	if (!b)
 		return (0);
 
-	while (*b)
+	for (i = 0; b[a]; a++)
 	{
-		if (*b != '0' && *b != '1')
+		if (b[a] < '0' || b[a] > '1')
 			return (0);
-
-		result = (result << 1) + (*b - '0');
-		b++;
+		dec_val = 2 * dec_val + (b[a] - '0');
 	}
 
-	return (result);
+	return (dec_val);
 }
