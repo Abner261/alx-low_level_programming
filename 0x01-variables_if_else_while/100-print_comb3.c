@@ -4,19 +4,20 @@
  * main -The program prints all possible different combinations of two digits
  * Return: ALways 0 (Success)
  */
+
 int main(void)
 {
-	int n, m;
+	int i, m;
 
-	for (n = 48; n <= 56; n++)
+	for (i = 48; i <= 56; i++)
 	{
 		for (m = 49; m <= 57; m++)
 		{
-			if (m > n)
+			if (m > i)
 			{
-				putchar(n);
+				putchar(i);
 				putchar(m);
-				if (n != 56 || m != 57)
+				if (i != 56 || m != 57)
 				{
 					putchar(',');
 					putchar(' ');
