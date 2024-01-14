@@ -1,18 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - Main void
- *
+ * main - A program that Computes and prints the sum of multiples
+ * of 3 or 5 below 1024
  * Return: 0
  */
+
 int main(void)
 {
-	int a;
+	int i;
 	int sum;
 
-		for (a = 0; a < 1024; a++)
+		for (i = 0; i < 1024; i++)
 		{
-			if ((a % 3 == 0) || (a % 5 == 0))
-				sum = sum + a;
+			if ((i % 3 == 0) || (i % 5 == 0))
+				sum = sum + i;
 		}
 		printf("%d\n", sum);
 		return (0);
