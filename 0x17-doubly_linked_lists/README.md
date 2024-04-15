@@ -63,21 +63,21 @@ typedef struct dlistint_s
 	
 	- In a doubly linked list, what are possible directions to traverse it? (select all possible answers)
 
-[a] **Forward**
+		[a] **Forward**
 
-[b] **Backward**
+		[b] **Backward**
 
-* **Answers [a], [b]**
+			* **Answers [a], [b]**
 
 * **Question #1**
 	
 	- In a doubly linked list, what’s the “head” of a linked list?
 
-[a] It’s the node with the pointer to the next equals to `NULL`
+		[a] It’s the node with the pointer to the next equals to `NULL`
 
-[b] It’s the node with the pointer to the previous equals to `NULL`
+		[b] **It’s the node with the pointer to the previous equals to `NULL`**
 
-* **Answer [b]**
+			* **Answer [b]**
 
 ## Tasks
 
