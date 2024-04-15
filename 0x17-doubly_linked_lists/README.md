@@ -67,7 +67,7 @@ typedef struct dlistint_s
 
 		[b] **Backward**
 
-			* **Answers [a], [b]**
+		* **Answers [a], [b]**
 
 * **Question #1**
 	
@@ -77,7 +77,7 @@ typedef struct dlistint_s
 
 		[b] **It’s the node with the pointer to the previous equals to `NULL`**
 
-			* **Answer [b]**
+		* **Answer [b]**
 
 ## Tasks
 
@@ -103,3 +103,22 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- GitHub repository: `alx-low_level_programming`
 	- Directory: `0x17-doubly_linked_lists`
 	- File: `0-print_dlistint.c`
+
+1. [List length](./1-dlistint_len.c)
+
+* **Write a function that returns the number of elements in a linked dlistint_t list.**
+
+	- Prototype: `size_t dlistint_len(const dlistint_t *h);`
+
+```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-dlistint_len.c -o b
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./b
+-> 2 elements
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x17-doubly_linked_lists`
+	- File: `1-dlistint_len.c`
