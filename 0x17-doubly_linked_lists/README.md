@@ -122,3 +122,60 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- GitHub repository: `alx-low_level_programming`
 	- Directory: `0x17-doubly_linked_lists`
 	- File: `1-dlistint_len.c`
+
+2. [Add node](./2-add_dnodeint.c)
+
+* **Write a function that adds a new node at the beginning of a** `dlistint_t` **list.**
+
+	- Prototype: `dlistint_t *add_dnodeint(dlistint_t **head, const int n);`
+	- Return: the address of the new element, or `NULL` if it failed
+
+```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_dnodeint.c 0-print_dlistint.c -o c
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ls
+0-main.c            1-dlistint_len.c  2-add_dnodeint.c  3-main.c  5-main.c  7-main.c  a  c        README.md
+0-print_dlistint.c  1-main.c          2-main.c          4-main.c  6-main.c  8-main.c  b  lists.h
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./c
+1024
+402
+98
+4
+3
+2
+1
+0
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x17-doubly_linked_lists`
+	- File: `2-add_dnodeint.c`
+
+3. [Add node at the end](./3-add_dnodeint_end.c)
+
+* **Write a function that adds a new node at the end of a** `dlistint_t` **list.**
+
+	- Prototype: dlistint_t `*add_dnodeint_end(dlistint_t **head, const int n);`
+	- Return: the address of the new element, or `NULL` if it failed
+
+```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-add_dnodeint_end.c 0-print_dlistint.c -o d
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./d
+0
+1
+2
+3
+4
+98
+402
+1024
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x17-doubly_linked_lists`
+	- File: `3-add_dnodeint_end.c`
