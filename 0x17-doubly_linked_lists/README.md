@@ -83,7 +83,7 @@ typedef struct dlistint_s
 
 0. [Print list](./0-print_dlistint.c)
 
-* **Write a function that prints all the elements of a `dlistint_t` list.**
+* **Write a function that prints all the elements of a** `dlistint_t` **list.**
 
 	- Prototype: `size_t print_dlistint(const dlistint_t *h);`
 	- Return: the number of nodes
@@ -106,7 +106,7 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 
 1. [List length](./1-dlistint_len.c)
 
-* **Write a function that returns the number of elements in a linked dlistint_t list.**
+* **Write a function that returns the number of elements in a linked** `dlistint_t` **list.**
 
 	- Prototype: `size_t dlistint_len(const dlistint_t *h);`
 
@@ -220,3 +220,33 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- GitHub repository: `alx-low_level_programming`
 	- Directory: `0x17-doubly_linked_lists`
 	- File: `4-free_dlistint.c`
+
+5. [Get node at index](./5-get_dnodeint.c)
+
+* **Write a function that returns the nth node of a** `dlistint_t` **linked list**
+
+	- Prototype: `dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);`
+	- where `index` is the index of the node, starting from `0`
+	- if the node does not exist, return `NULL`
+
+```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# vi 5-get_dnodeint.c
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 5-get_dnodeint.c -o h
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./h
+0
+1
+2
+3
+4
+98
+402
+1024
+98
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x17-doubly_linked_lists`
+	- File: `5-get_dnodeint.c`
