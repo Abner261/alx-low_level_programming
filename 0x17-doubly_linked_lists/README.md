@@ -179,3 +179,44 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- GitHub repository: `alx-low_level_programming`
 	- Directory: `0x17-doubly_linked_lists`
 	- File: `3-add_dnodeint_end.c`
+
+4. [Free list](./4-free_dlistint.c)
+
+* **Write a function that frees a** `dlistint_t` **list**
+
+	- Prototype: `void free_dlistint(dlistint_t *head);`
+
+```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# vi 4-free_dlistint.c 
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c -o e
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# valgrind ./e 
+==30434== Memcheck, a memory error detector
+==30434== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30434== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==30434== Command: ./e
+==30434== 
+0
+1
+2
+3
+4
+98
+402
+1024
+==30434== 
+==30434== HEAP SUMMARY:
+==30434==     in use at exit: 0 bytes in 0 blocks
+==30434==   total heap usage: 9 allocs, 9 frees, 1,216 bytes allocated
+==30434== 
+==30434== All heap blocks were freed -- no leaks are possible
+==30434== 
+==30434== For lists of detected and suppressed errors, rerun with: -s
+==30434== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x17-doubly_linked_lists`
+	- File: `4-free_dlistint.c`
