@@ -250,3 +250,24 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- GitHub repository: `alx-low_level_programming`
 	- Directory: `0x17-doubly_linked_lists`
 	- File: `5-get_dnodeint.c`
+
+6. [Sum list](./6-sum_dlistint.c)
+
+* **Write a function that returns the sum of all the data (n) of a** `dlistint_t` **linked list**
+
+	- Prototype: `int sum_dlistint(dlistint_t *head);`
+	- if the list is empty, return `0`
+
+```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# vi 6-sum_dlistint.c
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra 6-main.c -std=gnu89 3-add_dnodeint_end.c 4-free_dlistint.c 6-sum_dlistint.c -o i
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./i
+sum = 1534
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x17-doubly_linked_lists`
+	- File: `6-sum_dlistint.c`
