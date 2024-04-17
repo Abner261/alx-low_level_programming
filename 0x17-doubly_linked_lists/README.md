@@ -322,7 +322,66 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- Returns: `1` if it succeeded, `-1` if it failed
 
 ```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# betty 8-delete_dnodeint.c 
 
+========== 8-delete_dnodeint.c ==========
+delete_dnodeint_at_index
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 8-main.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 8-delete_dnodeint.c -o k
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./k
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+402
+1024
+-----------------
+1
+2
+3
+4
+402
+1024
+-----------------
+2
+3
+4
+402
+1024
+-----------------
+3
+4
+402
+1024
+-----------------
+4
+402
+1024
+-----------------
+402
+1024
+-----------------
+1024
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+-----------------
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 ```
 
 * **Repo:**
