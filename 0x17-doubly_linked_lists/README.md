@@ -284,7 +284,27 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 Your files `2-add_dnodeint.c` and `3-add_dnodeint_end.c` will be compiled during the correction
 
 ```sh
-
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# gcc -Wall -pedantic -Werror -Wextra -std=gnu89 7-main.c 2-add_dnodeint.c 3-add_dnodeint_end.c 0-print_dlistint.c 4-free_dlistint.c 7-insert_dnodeint.c -o j
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists# ./j
+0
+1
+2
+3
+4
+98
+402
+1024
+-----------------
+0
+1
+2
+3
+4
+4096
+98
+402
+1024
+root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 ```
 
 * **Repo:**
