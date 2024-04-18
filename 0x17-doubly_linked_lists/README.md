@@ -429,7 +429,12 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x17-doubly_linked_lists#
 	- Your keygen should print a valid key for the `username`
 
 ```sh
-
+julien@ubuntu:~/0x17$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 103-keygen.c -o keygen5
+julien@ubuntu:~/0x17$ ./crackme5 julien javascript
+Segmentation fault (core dumped)
+julien@ubuntu:~/0x17$ ./crackme5 julien `./keygen5 julien`
+Congrats!
+julien@ubuntu:~/0x17$ 
 ```
 
 * **Repo:**
