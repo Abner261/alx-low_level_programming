@@ -2,13 +2,13 @@
 
 ### Resources
 
-**Read or watch:**
+* **Read or watch:**
 
 	- [Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
 	- [Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
 	- [Serach Algorithms video playlist](https://www.youtube.com/playlist?list=PLEJXowNB4kPwTb4BivkY0dENHmXdOEM3V)
 
-**Learning Objectives**
+* **Learning Objectives**
 
 	- At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/), **without the help of Google:**
 
