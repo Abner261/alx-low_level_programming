@@ -65,7 +65,32 @@
 	- Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
 ```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# vi 0-linear.c 
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# gcc -Wall -Wextra -Werror -pedantic -std=gnu89 0-main.c 0-linear.c -o 0-linear
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ./0-linear 
+Value checked array[0] = [10]
+Value checked array[1] = [1]
+Value checked array[2] = [42]
+Value checked array[3] = [3]
+Found 3 at index: 3
 
+Value checked array[0] = [10]
+Value checked array[1] = [1]
+Value checked array[2] = [42]
+Found 42 at index: 2
+
+Value checked array[0] = [10]
+Value checked array[1] = [1]
+Value checked array[2] = [42]
+Value checked array[3] = [3]
+Value checked array[4] = [4]
+Value checked array[5] = [42]
+Value checked array[6] = [6]
+Value checked array[7] = [7]
+Value checked array[8] = [-1]
+Value checked array[9] = [9]
+Found 999 at index: -1
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 ```
 
 * **Repo:**
@@ -247,4 +272,146 @@ int **allocate_map(int n, int m)
 	- Directory: `0x1E-search_algorithms`
 	- File: `103-exponential.c`
 
+11. [Advanced binary search](104-advanced_binary.c)
 
+You may have noticed that the basic binary search does not necessarily return the index of the first value in the array (if this value appears more than once in the array). In this exercise, you’ll have to solve this problem.
+
+* Write a function that searches for a value in a sorted array of integers
+
+	- Prototype : `int advanced_binary(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in `array`
+	- And `value` is the value to search for
+	- Your function must return the index where `value` is located
+	- You can assume that `array` will be sorted in ascending order
+	- If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
+	- Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
+	- You have to use recursion. You may only use one loop (`while`, `for`, `do` `while`, etc.) in order to print the array
+
+```sh
+
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x1E-search_algorithms`
+	- File: `104-advanced_binary.c`
+
+12. [Jump search in a singly linked list](105-jump_list.c)
+
+You might think that linear search is not as effective as any other algorithm, right? Well, we should see what happens with a singly linked list.
+
+Please define the following data structure in your `search_algos.h` header file:
+
+```sh
+/**
+ * struct listint_s - singly linked list
+ *
+ * @n: Integer
+ * @index: Index of the node in the list
+ * @next: Pointer to the next node
+ *
+ * Description: singly linked list node structure
+ */
+typedef struct listint_s
+{
+    int n;
+    size_t index;
+    struct listint_s *next;
+} listint_t;
+```
+
+* Write a function that searches for a value in a sorted list of integers using the Jump search algorithm.
+
+	- Prototype : `listint_t *jump_list(listint_t *list, size_t size, int value);`
+	- Where `list` is a pointer to the head of the list to search in
+	- `size` is the number of nodes in `list`
+	- And `value` is the value to search for
+	- Your function must return a pointer to the first node where `value` is located
+	- You can assume that `list` will be sorted in ascending order
+	- If `value` is not present in `head` or if `head` is `NULL`, your function must return `NULL`
+	- You have to use the square root of the size of the list as the jump step
+	- You can use the `sqrt()` function included in `<math.h>` (don’t forget to compile with -lm)
+	- Every time you compare a value in the list to the value you are searching, you have to print this value (see example)
+
+NOTE: [You can find here](https://github.com/alx-tools/0x1D.c/tree/master/skiplist) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
+
+```sh
+
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x1E-search_algorithms`
+	- File: `105-jump_list.c`
+
+13. [Linear search in a skip list](106-linear_skip.c)
+
+As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an “express lane” to browse it. A linked list with an express lane is called a [skip list](https://en.wikipedia.org/wiki/Skip_list). This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as `sizeof(skiplist_t) > sizeof(listint_t)` (see example below).
+
+Please define the following data structure in your `search_algos.h` header file:
+
+```sh
+/**
+ * struct skiplist_s - Singly linked list with an express lane
+ *
+ * @n: Integer
+ * @index: Index of the node in the list
+ * @next: Pointer to the next node
+ * @express: Pointer to the next node in the express lane
+ *
+ * Description: singly linked list node structure with an express lane
+ */
+typedef struct skiplist_s
+{
+    int n;
+    size_t index;
+    struct skiplist_s *next;
+    struct skiplist_s *express;
+} skiplist_t;
+```
+
+* Write a function that searches for a value in a sorted skip list of integers
+
+	- Prototype : `skiplist_t *linear_skip(skiplist_t *list, int value);`
+	- Where `list` is a pointer to the head of the skip list to search in
+	- A node of the express lane is placed every index which is a multiple of the square root of the size of the list (see example below)
+	- And `value` is the value to search for
+	- You can assume that `list` will be sorted in ascending order
+	- Your function must return a pointer on the first node where `value` is located
+	- If `value` is not present in `list` or if `head` is `NULL`, your function must return `NULL`
+	- Every time you compare a value in the list to the value you are searching, you have to print this value (see example below)
+
+NOTE: [You can find here](https://github.com/alx-tools/0x1D.c/tree/master/skiplist) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
+
+```sh
+
+```
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x1E-search_algorithms`
+	- File: `106-linear_skip.c`
+
+14. [Big O #6](107-O)
+
+* What is the `time complexity` (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)`?
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x1E-search_algorithms`
+	- File: `107-O`
+
+15. [Big O #7](108-O)
+
+* What is the `time complexity` (average case) of a jump search in a skip list of size `n`, with an express lane using `step = sqrt(n)`?
+
+* **Repo:**
+
+	- GitHub repository: `alx-low_level_programming`
+	- Directory: `0x1E-search_algorithms`
+	- File: `108-O`
