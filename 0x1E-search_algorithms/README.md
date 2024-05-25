@@ -114,7 +114,24 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 	- You must print the array being searched every time it changes. (e.g. at the beginning and when you search a subarray) (See example)
 
 ```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# gcc -Wall -Wextra -Werror -pedantic -std=gnu89 1-main.c 1-binary.c -o 1-binary
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ./1-binary 
+Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Searching in array: 0, 1, 2, 3
+Searching in array: 2, 3
+Found 2 at index: 2
 
+Searching in array: 0, 1, 2, 3, 4
+Searching in array: 3, 4
+Searching in array: 4
+Found 5 at index: -1
+
+Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Searching in array: 5, 6, 7, 8, 9
+Searching in array: 8, 9
+Searching in array: 9
+Found 999 at index: -1
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 ```
 
 * **Repo:**
