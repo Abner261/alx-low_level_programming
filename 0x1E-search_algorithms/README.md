@@ -220,7 +220,31 @@ int **allocate_map(int n, int m)
 	- Every time you compare a value in the array to the value you are searching for, you have to print this value (see example)
 
 ```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# gcc -Wall -Wextra -Werror -pedantic -std=gnu89 100-main.c 100-jump.c -lm -o 100-jump
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ./100-jump 
+Value checked array[0] = [0]
+Value checked array[3] = [3]
+Value found between indexes [3] and [6]
+Value checked array[3] = [3]
+Value checked array[4] = [4]
+Value checked array[5] = [5]
+Value checked array[6] = [6]
+Found 6 at index: 6
 
+Value checked array[0] = [0]
+Value found between indexes [0] and [3]
+Value checked array[0] = [0]
+Value checked array[1] = [1]
+Found 1 at index: 1
+
+Value checked array[0] = [0]
+Value checked array[3] = [3]
+Value checked array[6] = [6]
+Value checked array[9] = [9]
+Value found between indexes [9] and [12]
+Value checked array[9] = [9]
+Found 999 at index: -1
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 ```
 
 * **Repo:**
