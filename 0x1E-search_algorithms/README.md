@@ -382,7 +382,30 @@ You may have noticed that the basic binary search does not necessarily return th
 	- You have to use recursion. You may only use one loop (`while`, `for`, `do` `while`, etc.) in order to print the array
 
 ```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# vi 104-advanced_binary.c
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# betty 104-advanced_binary.c 
 
+========== 104-advanced_binary.c ==========
+advanced_binary_recursive
+advanced_binary
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# gcc -Wall -Wextra -Werror -pedantic -std=gnu89 104-main.c 104-advanced_binary.c -o 104-advanced_binary
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ./104-advanced_binary
+Searching in array: 0, 1, 2, 5, 5, 6, 6, 7, 8, 9
+Searching in array: 6, 6, 7, 8, 9
+Searching in array: 8, 9
+Found 8 at index: 8
+
+Searching in array: 0, 1, 2, 5, 5, 6, 6, 7, 8, 9
+Searching in array: 0, 1, 2, 5, 5
+Searching in array: 5, 5
+Found 5 at index: 3
+
+Searching in array: 0, 1, 2, 5, 5, 6, 6, 7, 8, 9
+Searching in array: 6, 6, 7, 8, 9
+Searching in array: 8, 9
+Searching in array: 9
+Found 999 at index: -1
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 ```
 
 * **Repo:**
