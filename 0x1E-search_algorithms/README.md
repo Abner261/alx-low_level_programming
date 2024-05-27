@@ -278,7 +278,26 @@ root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 	- Every time you compare a value in the array to the value you are searching, you have to print this value (see example below)
 
 ```sh
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ls
+0-linear    0-main.c  100-jump.c  101-O       1-binary    1-main.c  3-O  5-O  README.md
+0-linear.c  100-jump  100-main.c  102-main.c  1-binary.c  2-O       4-O  6-O  search_algos.h
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# vi 102-interpolation.c
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# betty 102-interpolation.c 
 
+========== 102-interpolation.c ==========
+interpolation_search
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# gcc -Wall -Wextra -Werror -pedantic -std=gnu89 102-main.c 102-interpolation.c -o 102-interpolation
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ./102-interpolation 
+Value checked array[6] = [2]
+Value checked array[7] = [3]
+Found 3 at index: 7
+
+Value checked array[14] = [7]
+Found 7 at index: 14
+
+Value checked array[14] is out of range
+Found 999 at index: -1
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms#
 ```
 
 * **Repo:**
