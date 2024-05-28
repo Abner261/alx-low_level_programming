@@ -549,8 +549,13 @@ typedef struct skiplist_s
 NOTE: [You can find here](https://github.com/alx-tools/0x1D.c/tree/master/skiplist) the functions used in the example. You don’t need to push them, we will compile your file with our own implementation during the correction.
 
 ```sh
-wilfried@0x1E-search_algorithms$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 106-main.c 106-linear_skip.c skiplist/*.c -lm -o 106-linear
-wilfried@0x1E-search_algorithms$ ./106-linear 
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# vi 106-linear_skip.c 
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# betty 106-linear_skip.c 
+
+========== 106-linear_skip.c ==========
+linear_skip
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# gcc -Wall -Wextra -Werror -pedantic -std=gnu89 106-main.c 106-linear_skip.c skiplist/*.c -lm -o 106-linear
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# ./106-linear 
 List :
 Index[0] = [0]
 Index[1] = [1]
@@ -601,6 +606,7 @@ Value checked at index [13] = [62]
 Value checked at index [14] = [76]
 Value checked at index [15] = [99]
 Found 999 at index: (nil)
+root@e1714dc5a3c9:~/alx-low_level_programming/0x1E-search_algorithms# 
 ```
 
 * **Repo:**
