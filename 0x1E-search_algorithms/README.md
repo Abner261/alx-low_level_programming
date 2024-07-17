@@ -1,5 +1,8 @@
 ## 0x1E. C - Search Algorithms
 
+![C](https://img.shields.io/badge/C-red)
+![Algorithm](https://img.shields.io/badge/Algorithm-red)
+
 ### Resources
 
 * **Read or watch:**
